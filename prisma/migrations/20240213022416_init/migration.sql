@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE `issue` MODIFY `title` VARCHAR(255) NOT NULL,
+    MODIFY `description` TEXT NOT NULL,
+    MODIFY `status` ENUM('OPEN', 'IN_PROGRESS', 'CLOSED') NOT NULL DEFAULT 'OPEN';
